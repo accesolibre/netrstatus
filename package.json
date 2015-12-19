@@ -1,6 +1,6 @@
 {
   "name": "netrstatus",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Internet Report Status",
   "main": "src/index.js",
   "scripts": {
