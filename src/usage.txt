@@ -1,0 +1,14 @@
+netrstatus -- Internet Status Report tool
+
+Usage:
+  netrstatus check [--sites=<sites.json>] [--full]
+  netrstatus test <url> [--status=<httpcode>]
+  netrstatus speed
+  netrstatus -h | --help | --version
+
+Options:
+  -h --help                     Show help information.
+  --version                     Show version.
+  --status=<httpcode>           Expected HTTP status code [default: 200].
+  --sites=<sites.json>          JSON with sites to test [default: default].
+  --full                        Test DNS, HTTP, Traceroutes and Net Speed [default: true].
