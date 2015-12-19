@@ -16,7 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "rc": "^1.1.5",
-    "request": "^2.67.0"
+    "request": "^2.67.0",
+    "speedtest-net": "^1.2.4"
   },
   "devDependencies": {
     "tape": "^4.2.2"
