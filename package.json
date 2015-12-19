@@ -1,0 +1,27 @@
+{
+  "name": "netrstatus",
+  "version": "1.0.0",
+  "description": "Internet Report Status",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "tape 'test/test-*.js'"
+  },
+  "keywords": [
+    "internet",
+    "net",
+    "report",
+    "status"
+  ],
+  "author": "Jose-Luis Rivas <me@ghostbar.co>",
+  "license": "ISC",
+  "dependencies": {
+    "rc": "^1.1.5",
+    "request": "^2.67.0"
+  },
+  "devDependencies": {
+    "tape": "^4.2.2"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
