@@ -1,8 +1,6 @@
 netrstatus
 ==========
 
-[![CircleCI](https://circleci.com/gh/accesolibre/netrstatus.svg?style=svg)](https://circleci.com/gh/accesolibre/netrstatus)
-
 Short for Internet Report Status, does some tests to check the internet
 connection and reports these results to `accesolibre.red` API.
 
