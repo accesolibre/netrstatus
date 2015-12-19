@@ -21,6 +21,10 @@
   "devDependencies": {
     "tape": "^4.2.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/accesolibre/netrstatus.git"
+  },
   "engines": {
     "node": ">=4.0.0"
   }
