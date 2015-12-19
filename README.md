@@ -17,6 +17,8 @@ What tests are ran?
 + **DNS resolution**: uses the assigned DNS to check if the domain name can be
   resolved. It checks as well if this resolution conforms to the expected
   resolution for that domain name.
++ **ICMP**: test if ICMP is blocked (if the host accepts it).
++ **Network speed**: test the network connection speed.
 
 Author and license
 ------------------
