@@ -5,7 +5,7 @@ var trace = require('trace')
 var webr = require('webr')
 
 function run (opts, callback) {
-  async.parallel([
+  async.series([
     function (cb) { dnsr(opts, cb) },
     function (cb) { trace(opts, cb) },
     function (cb) { webr(opts, cb) }
