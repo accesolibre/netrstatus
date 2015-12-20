@@ -1,3 +1,4 @@
+var async = require('async')
 var fs = require('fs')
 var docopt = require('docopt').docopt
 var version = require('../package.json').version
@@ -11,6 +12,7 @@ if (args.test) {
     uri: args['<url>'],
     statusCode: parseInt(args['--status'], 10)
   }, function (err, res) {
+    console.log('LOG: testing site', args['<url>'])
     console.error('ERR:', err)
     console.log('RES:', res)
 
@@ -23,5 +25,20 @@ if (args.speed) {
     console.log('ERR:', err)
     console.log('RES:', data)
     return
+  })
+}
+
+if (args.check) {
+  var sites = require('./default.json')
+  async.eachSeries(sites, function (site, cb) {
+    console.log('tests on ', site)
+    nrs.run(site, function (err, res) {
+      console.log('LOG: testing site', site.uri)
+      console.error('ERR:', err)
+      console.log('RES:', res)
+      return cb(null, res)
+    })
+  }, function done () {
+    console.log('finished')
   })
 }
